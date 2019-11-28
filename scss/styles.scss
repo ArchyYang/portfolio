@@ -37,9 +37,15 @@ $border: #353C51;
 
 // Define text colors
 //$heading: #374054;
-$heading: #cc9049;
+
+$heading: #003EFF;
+//$company-name: #cc9049;
+$company-name: #BFEFFF;
+
 //$text: #74808a;
-$text: #d1d2d3;
+//$text: #d1d2d3;
+$text: #eae7af;
+$sub-heading: #057088;
 
 /*
     ---------------------
@@ -479,6 +485,12 @@ footer {
         color: $text;
         margin: 0;
     }
+
+    span {
+        display: list-item;
+        margin-left: 2em;
+        margin-top: 0.5em;
+    }
 }
 
 /*
@@ -497,6 +509,17 @@ footer {
     h2 {
         color: $heading;
     }
+    h3 {
+        color: $company-name;
+    }
+
+    h4 {
+        color: #009ACD;
+    }
+
+    
+
+
 }
 
 #experience-timeline {
@@ -558,6 +581,19 @@ footer {
         font-size: 0.9em;
         margin: 0;
     }
+
+    span {
+        display: list-item;
+        margin-left: 2em;
+        margin-top: 0.5em;
+    }
+}
+
+.location {
+    display: inline; 
+    float: right;
+    font-style: italic;
+    color: #8d9a9d !important;
 }
 
 .vtimeline-point {
@@ -592,7 +628,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #B5B5B5;
+    color: #C0D9D9;
 }
 
 /*
@@ -616,14 +652,14 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid $border;
+    //border: 1px solid $border;
     text-align: left;
 
     h3 {
         font-weight: 500;
         float: left;
         margin: 0;
-        color: $heading;
+        color: $company-name;
     }
 
     span {
@@ -632,10 +668,19 @@ footer {
     }
 
     h4 {
+        color: #009ACD;
+        clear: both;
+        font-weight: 500;
+        margin: 0 0 0px 0px;
+
+    }
+
+    h5 {
         color: $text;
         clear: both;
         font-weight: 500;
-        margin: 0 0 15px 0;
+        float: left;
+        margin: 15px 0 0 0px;
     }
 
     p, ul {
@@ -646,6 +691,10 @@ footer {
 
     ul {
         padding: 0 0 0 15px;
+    }
+
+    .degree {
+        
     }
 }
 
@@ -741,8 +790,9 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: $text;
+        border: 2px solid #6600FF;
+        border-radius: 25px;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
