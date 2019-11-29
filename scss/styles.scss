@@ -715,6 +715,9 @@ footer {
         color: $heading;
         margin-bottom: 50px;
     }
+    h3 {
+
+    }
 }
 
 .project {
@@ -722,12 +725,13 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: #01222A;
     border-radius: 4px;
 }
 
 .project-image {
     float: left;
+    opacity: 0.5;
 }
 
 .project-info {
@@ -740,8 +744,9 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: #D8D5FF;
         margin: 0 0 15px 0;
+        font-family: sans-serif;
     }
 
     p {
@@ -1043,7 +1048,10 @@ footer {
 
     .project-image {
         display: none;
+        max-height: 100%;
+        max-width: 20%
     }
+
 
     .project-info {
         position: relative;
