@@ -141,6 +141,7 @@ body {
 }
 
 header {
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -795,12 +796,17 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $text;
-        border: 2px solid #6600FF;
+        color: $text;   
         border-radius: 25px;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
+    }
+    .languages {
+        border: 2px solid #6600FF;
+    }
+    .skills {
+        border: 2px solid #c72c41;
     }
 }
 
@@ -938,6 +944,10 @@ footer {
         }
 
     }
+    header{
+        visibility: hidden;    
+    }
+    
 
     .vtimeline-date {
         width: auto;
@@ -960,6 +970,10 @@ footer {
 
 // Medium Devices
 @media only screen and (max-width : 992px) {
+
+    header {
+        visibility: hidden;
+    }
 
     #lead {
         height: auto;
@@ -997,6 +1011,7 @@ footer {
 @media only screen and (max-width : 768px) {
 
     header {
+        visibility: visible;  
         position: fixed;
         display: none;
         z-index: 999;
