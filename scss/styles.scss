@@ -375,7 +375,8 @@ footer {
         font-size: 4em;
         letter-spacing: 0.05em;
         line-height: 0.9em;
-        font-family: Comic Sans MS, Comic Sans, cursive;
+        //font-family: Comic Sans MS, Comic Sans, cursive;
+        font-family: OCR A Std, monospace;
         //font-family: Chalkduster, fantasy;
         margin-block-end: 0.67em;
     }
@@ -450,7 +451,7 @@ footer {
 
 #avatar-wrapper > .avatar {
     /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('../images/123.jpg');
+    background-image: url('../images/me.JPG');
 
     display: flex;
     justify-content: center;
@@ -728,6 +729,7 @@ footer {
     overflow: hidden;
     background: #01222A;
     border-radius: 4px;
+    display: block;
 }
 
 .project-image {
@@ -829,6 +831,7 @@ footer {
 }
 
 #contact-form {
+    position: relative;
     max-width: 500px;
     margin: 0 auto;
 
@@ -1022,6 +1025,7 @@ footer {
 
     #mobile-menu-open, #mobile-menu-close {
         display: block;
+        color: $text;
     }
 
     #menu {
@@ -1030,10 +1034,15 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
+        
 
         li {
             display: block;
             margin-bottom: 10px;
+
+        }
+        a {
+            color: $text;
         }
     }
 
